@@ -9,7 +9,7 @@ public class _01_MatchFullName {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
-        Pattern pattern = Pattern.compile("\\b[A-Z{1}][a-z]*\\s [A-Z{1}][a-z]*\\b");
+        Pattern pattern = Pattern.compile("\\b[A-Z{1}][a-z]*\\s[A-Z{1}][a-z]*\\b");
         Matcher matcher = pattern.matcher(input);
 
         while (true) {
